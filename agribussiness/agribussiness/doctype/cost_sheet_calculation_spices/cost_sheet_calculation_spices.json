@@ -1,0 +1,372 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-07-26 16:37:08.586270",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "buyer",
+  "column_break_z3qph",
+  "flo_id_1",
+  "section_break_rdjf7",
+  "seller",
+  "column_break_1ewmh",
+  "flo_id_2",
+  "section_break_iskhx",
+  "cost_sheet",
+  "section_break_5a5fd",
+  "naming_series",
+  "column_break_4fyki",
+  "date",
+  "column_break_jb0f9",
+  "product_category",
+  "section_break_epgkb",
+  "exchange_rate_notification_spices",
+  "section_break_dkktu",
+  "is_organic",
+  "price_per_kg",
+  "price_per_litre",
+  "section_break_7ejqb",
+  "organic_table_coffee",
+  "ft_premium_spices",
+  "section_break_rfjc4",
+  "ftmp_spices",
+  "column_break_qc8zc",
+  "spices_market_price_per_kg",
+  "column_break_embrb",
+  "spices_market_price_report",
+  "section_break_cdeam",
+  "coffee_market_price_report_liffe",
+  "section_break_2zbn3",
+  "coffee_market_price_report_differentials",
+  "total_eurkg",
+  "total_inr",
+  "column_break_0mpwd",
+  "product_description_table_spices",
+  "section_break_rbyb0",
+  "organic_coffee_total_amount",
+  "fob_expenses_spices",
+  "total_fob_expense_amount",
+  "difference_pdtc_total_fob",
+  "section_break_rtzzv",
+  "final_rate_display_spices",
+  "section_break_gyk0j",
+  "buyer_name",
+  "buyer_sign",
+  "column_break_er5fs",
+  "seller_name",
+  "seller_sign"
+ ],
+ "fields": [
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_z3qph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flo_id_1",
+   "fieldtype": "Data",
+   "label": "Buyer FLO ID"
+  },
+  {
+   "fieldname": "section_break_rdjf7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seller",
+   "fieldtype": "Link",
+   "label": "Seller",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_1ewmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flo_id_2",
+   "fieldtype": "Data",
+   "label": "Seller FLO ID"
+  },
+  {
+   "fieldname": "section_break_iskhx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost_sheet",
+   "fieldtype": "Heading",
+   "label": "Cost Sheet"
+  },
+  {
+   "fieldname": "section_break_5a5fd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Contract No.",
+   "options": "\nPAT/POC/FT.###./.YYYY.\nPATL/POC/FT.###./.YYYY.\nMAS/POC/FT.###./.YYYY.\nMASS/POC/FT.###./.YYYY.\nHAS/POC/FT.###./.YYYY.\nHOWFFA/POC/FT.###./.YYYY.\nPO/POC/FT.###./.YYYY.\nFONL/POC/FT.###./.YYYY.\nFTGS/POC/FT.###./.YYYY.\nBS/POC/FT.###./.YYYY.\nBIO/POC/FT.###./.YYYY.\nPEC/POC/FT.###./.YYYY.\nBARC/POC/FT.###./.YYYY.\nKNT/POC/FT.###./.YYYY.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4fyki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_jb0f9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Select",
+   "label": "Product Category",
+   "options": "\nSpices"
+  },
+  {
+   "fieldname": "section_break_epgkb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Spices\"",
+   "fieldname": "exchange_rate_notification_spices",
+   "fieldtype": "Table",
+   "label": "Exchange Rate Notification Spices ",
+   "options": "Exchange Rate Notification Spices"
+  },
+  {
+   "fieldname": "section_break_dkktu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.product_category==\"Coffee\"",
+   "fieldname": "is_organic",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Organic Coffee"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Coffee\"||doc.product_category==\"Spices\"",
+   "fieldname": "price_per_kg",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Price per KG"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Oil\"",
+   "fieldname": "price_per_litre",
+   "fieldtype": "Data",
+   "label": "Price per Litre"
+  },
+  {
+   "fieldname": "section_break_7ejqb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Coffee\"&&doc.is_organic==1",
+   "fieldname": "organic_table_coffee",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Organic Table Coffee",
+   "options": "Organic Table Coffee"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Spices\"",
+   "fieldname": "ft_premium_spices",
+   "fieldtype": "Table",
+   "label": "FT Premium Spices",
+   "options": "FT Premium Spices"
+  },
+  {
+   "fieldname": "section_break_rfjc4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Spices\"",
+   "fieldname": "ftmp_spices",
+   "fieldtype": "Table",
+   "label": "FTMP Spices",
+   "options": "FTMP Spices"
+  },
+  {
+   "fieldname": "column_break_qc8zc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Spices\"",
+   "fieldname": "spices_market_price_per_kg",
+   "fieldtype": "Table",
+   "label": "Spices Market Price per KG",
+   "options": "Spices Market Price per KG"
+  },
+  {
+   "fieldname": "column_break_embrb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Spices\"",
+   "fieldname": "spices_market_price_report",
+   "fieldtype": "Table",
+   "label": "Spices Market Price Report",
+   "options": "Spices Market Price Report"
+  },
+  {
+   "fieldname": "section_break_cdeam",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Coffee\"",
+   "fieldname": "coffee_market_price_report_liffe",
+   "fieldtype": "Table",
+   "label": "Coffee Market Price Report LIFFE",
+   "options": "Coffee Market Price Report LIFFE"
+  },
+  {
+   "fieldname": "section_break_2zbn3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Coffee\"",
+   "fieldname": "coffee_market_price_report_differentials",
+   "fieldtype": "Table",
+   "label": "Coffee Market Price Report Differentials",
+   "options": "Coffee Market Price Report Differentials"
+  },
+  {
+   "fieldname": "total_eurkg",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total EURKG"
+  },
+  {
+   "fieldname": "total_inr",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total INR"
+  },
+  {
+   "fieldname": "column_break_0mpwd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval:doc.product_category==\"Spices\"",
+   "fieldname": "product_description_table_spices",
+   "fieldtype": "Table",
+   "label": "Product Description Table Spices",
+   "options": "Product Description Table Spices",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_rbyb0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Coffee\"&&doc.is_organic==1",
+   "fieldname": "organic_coffee_total_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Organic Coffee Total Amount"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Spices\"",
+   "fieldname": "fob_expenses_spices",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "FOB Expenses Spices",
+   "options": "FOB Expenses Spices"
+  },
+  {
+   "fieldname": "total_fob_expense_amount",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Total FOB Expense Amount"
+  },
+  {
+   "fieldname": "difference_pdtc_total_fob",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Difference (PDTC-Total FOB)"
+  },
+  {
+   "fieldname": "section_break_rtzzv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Spices\"",
+   "fieldname": "final_rate_display_spices",
+   "fieldtype": "Table",
+   "label": "Final Rate Display Spices",
+   "options": "Final Rate Display Spices"
+  },
+  {
+   "fieldname": "section_break_gyk0j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "buyer.company_name",
+   "fieldname": "buyer_name",
+   "fieldtype": "Data",
+   "label": "Buyer Name"
+  },
+  {
+   "fieldname": "buyer_sign",
+   "fieldtype": "Signature",
+   "label": "Authorized Signatory"
+  },
+  {
+   "fieldname": "column_break_er5fs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seller.company_name",
+   "fieldname": "seller_name",
+   "fieldtype": "Data",
+   "label": "Seller Name"
+  },
+  {
+   "fieldname": "seller_sign",
+   "fieldtype": "Signature",
+   "label": "Authorized Signatory"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-14 15:31:18.663905",
+ "modified_by": "Administrator",
+ "module": "Agribussiness",
+ "name": "Cost Sheet Calculation Spices",
+ "naming_rule": "By \"Naming Series\" field",
+ "nsm_parent_field": "parent_cost_sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

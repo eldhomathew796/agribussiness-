@@ -1,0 +1,477 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-08-26 12:12:22.337312",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "typegrade",
+  "agent",
+  "truck_no",
+  "mc",
+  "column_break_pnxtw",
+  "date",
+  "bags",
+  "uom",
+  "ot",
+  "section_break_kze1h",
+  "sc_19aaa",
+  "column_break_k8qgo",
+  "percent",
+  "section_break_zjfwu",
+  "sc_18aa",
+  "column_break_omqsc",
+  "p1",
+  "section_break_87pgj",
+  "sc_17a",
+  "column_break_vjqn1",
+  "p2",
+  "section_break_zuzvo",
+  "sc_15b",
+  "column_break_ze6am",
+  "p3",
+  "section_break_zcbie",
+  "sc_14c",
+  "column_break_ler5c",
+  "p4",
+  "section_break_7t0in",
+  "sc13_up",
+  "column_break_vfvnc",
+  "p5",
+  "section_break_d4jmp",
+  "pb",
+  "column_break_dxp0o",
+  "p6",
+  "section_break_oaiiu",
+  "bits_below_sc13",
+  "column_break_zvkx0",
+  "p7",
+  "section_break_o6hqb",
+  "bbb",
+  "column_break_cw8wm",
+  "p8",
+  "section_break_zx9s4",
+  "fm",
+  "column_break_mhg1o",
+  "p9",
+  "section_break_cljph",
+  "column_break_dzdql",
+  "triage",
+  "column_break_l6c1o",
+  "p10",
+  "section_break_okbif",
+  "blacks",
+  "column_break_clpp4",
+  "p11",
+  "section_break_9ydvo",
+  "browns",
+  "column_break_qxv8p",
+  "p12",
+  "section_break_hyhpd",
+  "idb",
+  "column_break_a07qf",
+  "p13",
+  "section_break_j4xrg",
+  "skinout_bleach_faded",
+  "column_break_5thxy",
+  "p14",
+  "section_break_qviuq",
+  "remarks",
+  "section_break_b3qqi",
+  "analyzed_by",
+  "analyzer_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nCQA/PAT/.FY./.####"
+  },
+  {
+   "fieldname": "typegrade",
+   "fieldtype": "Data",
+   "label": "Type/Grade"
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "label": "Agent",
+   "options": "Company"
+  },
+  {
+   "fieldname": "truck_no",
+   "fieldtype": "Data",
+   "label": "Truck no"
+  },
+  {
+   "bold": 1,
+   "fieldname": "mc",
+   "fieldtype": "Data",
+   "label": "MC:-"
+  },
+  {
+   "fieldname": "column_break_pnxtw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "bags",
+   "fieldtype": "Data",
+   "label": "Bags"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "bold": 1,
+   "fieldname": "ot",
+   "fieldtype": "Data",
+   "label": "OT :-"
+  },
+  {
+   "fieldname": "section_break_kze1h",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc_19aaa",
+   "fieldtype": "Data",
+   "label": "Sc 19AAA"
+  },
+  {
+   "fieldname": "column_break_k8qgo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_zjfwu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc_18aa",
+   "fieldtype": "Data",
+   "label": "Sc 18AA"
+  },
+  {
+   "fieldname": "column_break_omqsc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p1",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_87pgj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc_17a",
+   "fieldtype": "Data",
+   "label": "Sc 17A "
+  },
+  {
+   "fieldname": "column_break_vjqn1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p2",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_zuzvo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc_15b",
+   "fieldtype": "Data",
+   "label": "Sc 15B"
+  },
+  {
+   "fieldname": "column_break_ze6am",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p3",
+   "fieldtype": "Data",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_zcbie",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc_14c",
+   "fieldtype": "Data",
+   "label": "Sc 14C"
+  },
+  {
+   "fieldname": "column_break_ler5c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p4",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_7t0in",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sc13_up",
+   "fieldtype": "Data",
+   "label": "SC13 up"
+  },
+  {
+   "fieldname": "column_break_vfvnc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p5",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_d4jmp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pb",
+   "fieldtype": "Data",
+   "label": "PB"
+  },
+  {
+   "fieldname": "column_break_dxp0o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p6",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_oaiiu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bits_below_sc13",
+   "fieldtype": "Data",
+   "label": "Bits (below sc13)"
+  },
+  {
+   "fieldname": "column_break_zvkx0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p7",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_o6hqb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bbb",
+   "fieldtype": "Data",
+   "label": "BBB"
+  },
+  {
+   "fieldname": "column_break_cw8wm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p8",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_zx9s4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fm",
+   "fieldtype": "Data",
+   "label": "FM"
+  },
+  {
+   "fieldname": "column_break_mhg1o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p9",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_cljph",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dzdql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "description": "(broken /pulper cut /spotted /EB /",
+   "fieldname": "triage",
+   "fieldtype": "Data",
+   "label": "Triage"
+  },
+  {
+   "fieldname": "column_break_l6c1o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p10",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_okbif",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "description": "(full blacks /dark browns )",
+   "fieldname": "blacks",
+   "fieldtype": "Data",
+   "label": "Blacks"
+  },
+  {
+   "fieldname": "column_break_clpp4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p11",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_9ydvo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "description": "(brown /stinker / red bean /immature /partly black &PB brown)",
+   "fieldname": "browns",
+   "fieldtype": "Data",
+   "label": "Browns"
+  },
+  {
+   "fieldname": "column_break_qxv8p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p12",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_hyhpd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "description": " (2 and more than 2 hole beans)",
+   "fieldname": "idb",
+   "fieldtype": "Data",
+   "label": "IDB"
+  },
+  {
+   "fieldname": "column_break_a07qf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p13",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_j4xrg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "skinout_bleach_faded",
+   "fieldtype": "Data",
+   "label": "Skinout /Bleach /Faded"
+  },
+  {
+   "fieldname": "column_break_5thxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p14",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "section_break_qviuq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks :-"
+  },
+  {
+   "fieldname": "section_break_b3qqi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "analyzed_by",
+   "fieldtype": "Link",
+   "label": "Analyzed by",
+   "options": "User"
+  },
+  {
+   "fetch_from": "analyzed_by.full_name",
+   "fieldname": "analyzer_name",
+   "fieldtype": "Data",
+   "label": "Analyzer Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-27 11:50:10.027764",
+ "modified_by": "Administrator",
+ "module": "Agribussiness",
+ "name": "Coffee Physical Quality Analysis",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

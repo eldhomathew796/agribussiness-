@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:20:38.710985",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exchange_rate_notification_no",
+  "customs_nt_date",
+  "eur",
+  "inrs"
+ ],
+ "fields": [
+  {
+   "fieldname": "exchange_rate_notification_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Exchange Rate Notification No."
+  },
+  {
+   "fieldname": "customs_nt_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Customs (N.T.) Date"
+  },
+  {
+   "fieldname": "eur",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "EUR"
+  },
+  {
+   "fieldname": "inrs",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "INR"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-14 15:32:03.960602",
+ "modified_by": "Administrator",
+ "module": "Agribussiness",
+ "name": "Exchange Rate Notification Spices",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
